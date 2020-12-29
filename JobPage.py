@@ -1308,6 +1308,7 @@ class StateFrame(CNCRibbon.PageExLabelFrame):
 		self.addWidget(mistEnable)
 		f.grid_columnconfigure(1, weight=1)
 
+<<<<<<< HEAD
 	def setOverride25(self, event=None):
 		self.override.set(25)
 		self.overrideChange()
@@ -1344,12 +1345,17 @@ class StateFrame(CNCRibbon.PageExLabelFrame):
 		self.override.set(175)
 		self.overrideChange()
 
+=======
+>>>>>>> 48398c5 (test)
 	#----------------------------------------------------------------------
 	def overrideChange(self, event=None):
 		n = self.overrideCombo.get()
 		c = self.override.get()
 		self.linked_jobdro.override.set(c)
+<<<<<<< HEAD
 		print(c)
+=======
+>>>>>>> 48398c5 (test)
 		CNC.vars["_Ov"+n] = c
 		CNC.vars["_OvChanged"] = True
 

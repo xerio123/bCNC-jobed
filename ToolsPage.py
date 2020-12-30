@@ -528,12 +528,16 @@ class Shortcut(_Base):
 		_Base.__init__(self, master, "Shortcut")
 		self.variables = [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 525bdd3 (sfdg)
 			("F1",		"str",	""	, _("F1")),
 			("F2",		"str",	""	, _("F2")),
 			("F3",		"str",	""	, _("F3")),
 			("F4",		"str",	""	, _("F4")),
 			("F5",		"str",	""	, _("F5")),
 			("F6",		"str",	""	, _("F6")),
+<<<<<<< HEAD
 =======
 			("F1",		"str",	"help"	, _("F1")),
 			("F2",		"str",	"edit"	, _("F2")),
@@ -542,6 +546,8 @@ class Shortcut(_Base):
 			("F5",		"str",	"ISO2"	, _("F5")),
 			("F6",		"str",	"ISO3"	, _("F6")),
 >>>>>>> 48398c5 (test)
+=======
+>>>>>>> 525bdd3 (sfdg)
 			("F7",		"str",	""	, _("F7")),
 			("F8",		"str",	""	, _("F8")),
 			("F9",		"str",	""	, _("F9")),

@@ -527,12 +527,12 @@ class Shortcut(_Base):
 	def __init__(self, master):
 		_Base.__init__(self, master, "Shortcut")
 		self.variables = [
-			("F1",		"str",	"help"	, _("F1")),
-			("F2",		"str",	"edit"	, _("F2")),
-			("F3",		"str",	"XY"	, _("F3")),
-			("F4",		"str",	"ISO1"	, _("F4")),
-			("F5",		"str",	"ISO2"	, _("F5")),
-			("F6",		"str",	"ISO3"	, _("F6")),
+			("F1",		"str",	""	, _("F1")),
+			("F2",		"str",	""	, _("F2")),
+			("F3",		"str",	""	, _("F3")),
+			("F4",		"str",	""	, _("F4")),
+			("F5",		"str",	""	, _("F5")),
+			("F6",		"str",	""	, _("F6")),
 			("F7",		"str",	""	, _("F7")),
 			("F8",		"str",	""	, _("F8")),
 			("F9",		"str",	""	, _("F9")),

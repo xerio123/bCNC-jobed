@@ -478,6 +478,16 @@ class Application(Toplevel,Sender):
 		self.bind('<Key-2>',		self.jobcontrol.setStep2)
 		self.bind('<Key-3>',		self.jobcontrol.setStep3)
 
+		self.bind('<F1>',		self.gstate.setOverride25)
+		self.bind('<F2>',		self.gstate.setOverride50)
+		self.bind('<F3>',		self.gstate.setOverride70)
+		self.bind('<F4>',		self.gstate.setOverride85)
+		self.bind('<F5>',		self.gstate.setOverride100)
+		self.bind('<F6>',		self.gstate.setOverride115)
+		self.bind('<F7>',		self.gstate.setOverride125)
+		self.bind('<F8>',		self.gstate.setOverride150)	
+		self.bind('<F9>',		self.gstate.setOverride175)
+
 		self.bind('<Key-exclam>',	self.feedHold)
 		self.bind('<Key-asciitilde>',	self.resume)
 

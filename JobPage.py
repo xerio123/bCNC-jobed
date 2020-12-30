@@ -606,7 +606,7 @@ class RunFrame(CNCRibbon.PageFrame):
 		b.pack(expand=NO,fill=Y,side=LEFT)
 		
 		self.avanceX = Label(avanceframe,
-						text="40000",
+						text="    0",
 						justify=LEFT,
 						font = ("arial", 12,"bold"),)
 		tkExtra.Balloon.set(self.avanceX, _("speed X"))
@@ -619,9 +619,9 @@ class RunFrame(CNCRibbon.PageFrame):
 		b.pack(expand=NO,fill=Y,side=LEFT)
 
 		self.avanceY = Label(avanceframe,
-						text="40000",
+						text="    0",
 						justify=LEFT,
-						font = ("arial", 14,"bold"),)
+						font = ("arial", 12,"bold"),)
 		tkExtra.Balloon.set(self.avanceY, _("speed Y"))
 		self.avanceY.pack(expand=YES,fill=BOTH,side=LEFT)
 		
@@ -1308,11 +1308,48 @@ class StateFrame(CNCRibbon.PageExLabelFrame):
 		self.addWidget(mistEnable)
 		f.grid_columnconfigure(1, weight=1)
 
+	def setOverride25(self, event=None):
+		self.override.set(25)
+		self.overrideChange()
+
+	def setOverride50(self, event=None):
+		self.override.set(50)
+		self.overrideChange()
+
+	def setOverride70(self, event=None):
+		self.override.set(70)
+		self.overrideChange()
+
+	def setOverride85(self, event=None):
+		self.override.set(85)
+		self.overrideChange()
+
+	def setOverride100(self, event=None):
+		self.override.set(100)
+		self.overrideChange()
+
+	def setOverride115(self, event=None):
+		self.override.set(115)
+		self.overrideChange()
+
+	def setOverride125(self, event=None):
+		self.override.set(125)
+		self.overrideChange()
+
+	def setOverride150(self, event=None):
+		self.override.set(150)
+		self.overrideChange()
+
+	def setOverride175(self, event=None):
+		self.override.set(175)
+		self.overrideChange()
+
 	#----------------------------------------------------------------------
 	def overrideChange(self, event=None):
 		n = self.overrideCombo.get()
 		c = self.override.get()
 		self.linked_jobdro.override.set(c)
+		print(c)
 		CNC.vars["_Ov"+n] = c
 		CNC.vars["_OvChanged"] = True
 

@@ -636,14 +636,14 @@ class RunFrame(CNCRibbon.PageFrame):
 		fright.pack(expand=YES,fill=BOTH,side=LEFT)
 
 		for i in range(7,10):
-			b = Utils.UserButton(fleft, self, i,
+			b = Utils.UserButton(fleft, self.app, i,
 						anchor=W,
 						activebackground="LightYellow")
 			b.pack(expand=YES,fill=BOTH,side=TOP)
 			self.addWidget(b)
 
 		for i in range(10,13):
-			b = Utils.UserButton(fright, self, i,
+			b = Utils.UserButton(fright, self.app, i,
 						anchor=W,
 						activebackground="LightYellow")
 			b.pack(expand=YES,fill=BOTH,side=TOP)
@@ -666,14 +666,12 @@ class RunFrame(CNCRibbon.PageFrame):
 
 		tot=0
 		for lettre in self.speedx:
-			print(tot)
 			tot = tot + lettre
-		self.avanceX.configure(text="{0:.5f}".format( tot / 10 ) )
+		self.avanceX.configure(text="{0:.0f}".format( tot / 10 ) )
 		tot=0
 		for lettre in self.speedy:
-			print(tot)
 			tot = tot + lettre
-		self.avanceY.configure(text="{0:.5f}".format( tot / 10 ) )
+		self.avanceY.configure(text="{0:.0f}".format( tot / 10 ) )
 		self.temp = tmp
 		self.oldx=CNC.vars["mx"]
 		self.oldy=CNC.vars["my"]
@@ -1308,10 +1306,6 @@ class StateFrame(CNCRibbon.PageExLabelFrame):
 		self.addWidget(mistEnable)
 		f.grid_columnconfigure(1, weight=1)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 525bdd3 (sfdg)
 	def setOverride25(self, event=None):
 		self.override.set(25)
 		self.overrideChange()
@@ -1348,24 +1342,13 @@ class StateFrame(CNCRibbon.PageExLabelFrame):
 		self.override.set(175)
 		self.overrideChange()
 
-<<<<<<< HEAD
-=======
->>>>>>> 48398c5 (test)
-=======
->>>>>>> 525bdd3 (sfdg)
 	#----------------------------------------------------------------------
 	def overrideChange(self, event=None):
 		n = self.overrideCombo.get()
 		c = self.override.get()
 		self.linked_jobdro.override.set(c)
-<<<<<<< HEAD
-<<<<<<< HEAD
 		print(c)
-=======
->>>>>>> 48398c5 (test)
-=======
 		print(c)
->>>>>>> 525bdd3 (sfdg)
 		CNC.vars["_Ov"+n] = c
 		CNC.vars["_OvChanged"] = True
 

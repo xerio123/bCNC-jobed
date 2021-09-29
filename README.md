@@ -8,5 +8,7 @@ to simulate this version of bcnc you can use software proteus (version 8.4 run w
 (version 0.9i work well) see img: https://github.com/xerio123/bCNC-jobed/blob/master/proteus%208.4/configarduino.png
 
 to simulate you need also an virtual com port, for that i use port0port at adresse : http://com0com.sourceforge.net/ this is needed to transmit data between bcnc and simulate hardware in proteus (also, don't forget configure the correct port in proteue and bcnc, baudrate is alway 115200)
+see img: https://github.com/xerio123/bCNC-jobed/blob/master/proteus%208.4/configbcnc.png and https://github.com/xerio123/bCNC-jobed/blob/master/proteus%208.4/configproteus.png
 
-see config
+see you
+
